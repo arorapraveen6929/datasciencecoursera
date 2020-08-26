@@ -22,7 +22,7 @@ activities <- activity_labels.txt : 6 rows, 2 columns
 
 List of activities performed when the corresponding measurements were taken and its codes (labels)
 
-subject_test <- test/subject_test.txt
+subjecttest <- test/subject_test.txt
 contains test data of test subjects being observed
 
 xtest <- test/X_test.txt :
@@ -31,7 +31,7 @@ contains recorded features test data
 ytest <- test/y_test.txt :
 contains test data of activities’code labels
 
-subject_train <- test/subject_train.txt: 
+subjecttrain <- test/subject_train.txt: 
 contains train data of subjects being observed
 
 xtrain <- test/X_train.txt :
@@ -42,11 +42,11 @@ contains train data of activities’code labels
 
 Merges the training and the test sets to create one data set
 
-x is created by merging x_train and x_test using rbind() function
+x is created by merging xtrain and xtest using rbind() function
 
-y  is created by merging y_train and y_test using rbind() function
+y  is created by merging ytrain and ytest using rbind() function
 
-subject is created by merging subject_train and subject_test using rbind() function
+subject is created by merging subjecttrain and subjecttest using rbind() function
 
 mergeddata is created by merging Subject, Y and X using cbind() function
 
