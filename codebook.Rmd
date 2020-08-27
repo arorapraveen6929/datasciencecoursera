@@ -1,0 +1,38 @@
+---
+title: "Codebook"
+author: "Praveen Arora"
+date: "27/08/2020"
+output: html_document
+---
+
+## R Markdown
+
+First part:
+
+Download data from the link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+Unzip it
+Set the working directory to where the files you just unziped are
+Read the files and assign them a name: xtest, xtrain, ytest,ytrain, activity,subject test,subjecttrain
+Merge the data into a new data frame.
+Second part:
+
+Extract measurements of mean and standard deviation
+Create a second, independent tidy data set
+Variables:
+
+x_train
+y_train
+x_test
+y_test
+subject_train
+subject_test
+
+final datasets:
+
+X
+Y
+Subject
+mergeddata
+
+Final tidied data
+tidy
