@@ -24,7 +24,6 @@ y <- rbind(ytrain, ytest)
 subject <- rbind(subjecttrain, subjecttest)
 mergeddata <- cbind(subject, y, x)
 
-#extracting colums that contain mean and standard deviation definition 
 tidy <- mergeddata %>% select(subject, code, contains("mean"), contains("std"))
 
 #Give descriptive name to each activity
