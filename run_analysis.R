@@ -1,5 +1,6 @@
 
 #downloading the data set and unzipping the file
+library(dplyr)
 fileUrl="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 filename <-"courseraweek4.zip"
 if(!file.exists(filename))
@@ -43,4 +44,4 @@ names(tidy)<-gsub("-freq()", "frequency", names(tidy), ignore.case = TRUE)
 finaldata <- tidy %>% 
     group_by(subject,activity) %>% 
     summarise_all(funs(mean))
-write.table(finaldata,"finaldata.txt",row.name=FALSE)
+write.table(finaldata,"finaldata1.txt",row.name=FALSE)
